@@ -3,7 +3,7 @@ version: "2.1"
 services:
   jellyfin:
     image: lscr.io/linuxserver/jellyfin
-    container_name: jellyfin
+    container_name: octo
     environment:
       - PUID=1000
       - PGID=1000
@@ -15,5 +15,5 @@ services:
       - /home/darren/jelly/youtube:/data/youtube
       - /home/darren/jelly/audio:/data/audio
     ports:
-      - 8096:8096
+      - 2069:8096
     restart: unless-stopped
