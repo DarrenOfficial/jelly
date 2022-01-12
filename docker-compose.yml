@@ -15,5 +15,5 @@ services:
       - /home/darren/jelly/youtube:/data/youtube
       - /home/darren/jelly/audio:/data/audio
     ports:
-      - 2069:8096
+      - 3040:8096
     restart: unless-stopped
