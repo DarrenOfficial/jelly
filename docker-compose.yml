@@ -3,17 +3,17 @@ version: "2.1"
 services:
   jellyfin:
     image: lscr.io/linuxserver/jellyfin
-    container_name: octo
+    container_name: bass
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=America/Chicago
     volumes:
-      - /home/darren/jelly/config:/config
-      - /home/darren/jelly/series:/data/series
-      - /home/darren/jelly/movie:/data/movies
-      - /home/darren/jelly/youtube:/data/youtube
-      - /home/darren/jelly/audio:/data/audio
+      - /home/fin/config:/config
+      - /home/fin/series:/data/series
+      - /home/fin/movie:/data/movies
+      - /home/fin/youtube:/data/youtube
+      - /home/fin/audio:/data/audio
     ports:
       - 1984:8096
     restart: unless-stopped
