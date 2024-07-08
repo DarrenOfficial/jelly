@@ -9,11 +9,12 @@ services:
       - PGID=1000
       - TZ=America/Chicago
     volumes:
-      - /home/fin/config:/config
-      - /home/fin/series:/data/series
-      - /home/fin/movie:/data/movies
-      - /home/fin/youtube:/data/youtube
-      - /home/fin/audio:/data/audio
+      - /home/jellyfin/config:/config
+      - /fataf/media/series:/data/series
+      - /fataf/media/movies:/data/movies
+      - /fataf/media/youtube:/data/youtube
+      - /fataf/media/books:/data/books
+      - /fataf/media/audio:/data/audio
     ports:
       - 1984:8096
     restart: unless-stopped
